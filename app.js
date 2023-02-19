@@ -8,9 +8,9 @@ app.get("/", (req, res) => {
     res.json({ message: "Welcome contact book application." });
 });
 
-// const contactsRouter = require("./app/routes/contact.route.js");
+const contactsRouter = require("./app/routes/contact.route.js");
 
-// app.use("/api/contacts", contactsRouter);
+app.use("/api/contacts", contactsRouter);
 
 // //  cai dat cac xu li loi
 // app.use((req, res, next) => {
